@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black; /* Black background */
+            color: white; /* White text color */
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .container {
+            padding: 20px; /* Padding for the container */
+            max-width: 800px; /* Max width for content */
+            margin: auto; /* Center the container */
+            background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+        }
+
+        h1 {
+            text-align: center; /* Centered title */
+            color: #ff6600; /* Orange title color */
+        }
+
+        .service {
+            margin: 20px 0; /* Spacing between service sections */
+            padding: 15px; /* Padding for service sections */
+            background: rgba(255, 165, 0, 0.1); /* Semi-transparent orange */
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        .service img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px; /* Rounded corners for images */
+            margin-bottom: 10px; /* Space below images */
+        }
+
+        h2 {
+            color: #ffcc00; /* Lighter orange color for headings */
+        }
+
+        p {
+            margin: 0; /* Remove margin from paragraphs */
+        }
+
+        ul {
+            padding-left: 20px; /* Indent list items */
+        }
+
+        li {
+            margin-bottom: 5px; /* Space between list items */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="data:image/jpeg;base64,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" alt="Logo" /> <!-- Replace with your logo path -->
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Our Services</h1>
+        
+        <div class="service">
+            <img src="emotion-detection.jpg" alt="Emotion Detection Service">
+            <h2>Emotion Detection</h2>
+            <p>Utilizing advanced AI technologies, we provide real-time emotion detection to enhance user interactions.</p>
+        </div>
+        
+        <div class="service">
+            <img src="analytics.jpg" alt="Data Analytics Service">
+            <h2>Data Analytics</h2>
+            <p>We analyze emotional data to derive meaningful insights that help businesses understand their customers better.</p>
+        </div>
+        
+        <div class="service">
+            <img src="consultation.jpg" alt="Consultation Service">
+            <h2>Consultation</h2>
+            <p>Our experts provide personalized consultations to help you implement emotion detection solutions effectively.</p>
+        </div>
+        
+        <div class="service">
+            <img src="training.jpg" alt="Training Service">
+            <h2>Training Programs</h2>
+            <p>We offer training sessions to help your team utilize emotion detection technologies to their fullest potential.</p>
+        </div>
+    </div>
+</body>
+</html>
+

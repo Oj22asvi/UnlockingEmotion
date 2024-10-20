@@ -1,13 +1,109 @@
-body{
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
+/* style.css */
+
+body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
     align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-family: Arial, sans-serif;
 }
 
-canvas{
-    position: absolute;
+nav {
+    width: 100%;
+    background-color: #fff; /* White navbar */
+    color: #000; /* Black text */
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed; /* Fix the navbar to the top */
+    top: 0; /* Align to the top of the viewport */
+    z-index: 1000; /* Ensure it's above other elements */
 }
+
+.logo img {
+    height: 40px; /* Logo height */
+    margin-right: 20px; /* Space between logo and nav items */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-left: auto; /* Aligns the menu to the right */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000; /* Black text */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600; /* Orange on hover */
+}
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px; /* Space below the navbar */
+    height: calc(100vh - 80px); /* Adjust height for navbar */
+}
+
+h1 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.emotion-button {
+    background-color: #ff6600; /* Button color */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 300px; /* Button width */
+    margin: 10px 0; /* Space between buttons */
+    transition: background-color 0.3s;
+}
+
+.emotion-button:hover {
+    background-color: #e65c00; /* Darker orange on hover */
+}
+
+.detection-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+#detectionInfo {
+    position: fixed; /* Fix the table to the right */
+    top: 50%; /* Center vertically */
+    right: 20px; /* Space from the right edge */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    background-color: rgba(255, 165, 0, 0.9); /* Semi-transparent orange */
+    border: 1px solid #ff6600; /* Darker orange border */
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    width: 250px; /* Fixed width */
+} 
+
+/* Adjust canvas positioning */
+
+
+
